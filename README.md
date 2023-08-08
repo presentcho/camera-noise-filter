@@ -1,5 +1,6 @@
 # Camera Light Streaks Detection and Noise Filtering
 
+# abstract
 This study is motivated by the application of data mining techniques to address issues caused by light streaks in images due to camera hardware anomalies. While modern camera lenses can capture vivid images in low-light environments, adjustments such as ISO, aperture, or shutter speed are often required. Nowadays, data mining and machine learning methods are applied in software to complement hardware limitations. This paper introduces methods of image preprocessing and light detection.
 
 As part of the process to eliminate light noise, two major aspects are focused on:
