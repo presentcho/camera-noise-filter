@@ -4,10 +4,10 @@ This study is motivated by the application of data mining techniques to address 
 
 As part of the process to eliminate light noise, two major aspects are focused on:
 
-Dimensionality reduction to handle high-resolution photos.
-Image segmentation to distinguish light from the background elements (e.g., buildings, ceiling, streets).
-In the dimension reduction phase, the use of autoencoders proves effective not only for reducing dimensions but also for denoising light streak artifacts. While the initial autoencoder used a bottleneck layer size of 128, a modification in the third phase reduces the bottleneck layer size to 16. This change aims to determine if a smaller bottleneck layer can adequately reconstruct images. The autoencoder is then employed to denoise images and identify optimal autoencoder structures.
+1. Dimensionality reduction to handle high-resolution photos.
+2. Image segmentation to distinguish light from the background elements (e.g., buildings, ceiling, streets).
 
-Different autoencoder structures are compared, and the most effective one is selected for further analysis. Furthermore, a comparison is made with the variational autoencoder (VAE). The primary tools used in this study are Python TensorFlow, and the construction of autoencoders, denoise autoencoders (DAEs), and VAEs involves convolutional neural networks (CNNs).
+# Methods
+rincipal Component Analysis (PCA) was used to compress images and handle the large dataset. Additionally, the K-means clustering method and Gaussian Mixture Model (GMM) were employed for image segmentation, and a comparison was made between these two methods.
 
-It is important to note that while data slicing or stacking in neural networks can lead to information loss, CNNs are capable of retaining the spatial information of input images.
+For the noise filtering model, autoencoders and variational autoencoders (VAEs) were implemented. To enhance the model's performance, Gaussian noise was introduced to the images. The model was then trained using both the original images and the images with added Gaussian noise. Notably, a convolutional neural network (CNN) was utilized for denoising the images.
