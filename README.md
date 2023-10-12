@@ -13,6 +13,8 @@ Principal Component Analysis (PCA) was used to compress images and handle the la
 For the noise filtering model, autoencoders and variational autoencoders (VAEs) were implemented. To enhance the model's performance, Gaussian noise was introduced to the images. The model was then trained using both the original images and the images with added Gaussian noise. Notably, a convolutional neural network (CNN) was utilized for denoising the images.
 
 ## Result
-| Cat pics               | Dog pics               |
+| Test Image             | Autoencoder Image      |
 | ---------------------- | ---------------------- |
 | ![1](img/test.png) | ![2](img/autoencoder.png) |
+
+The test image on the right-hand side features light strikes and noises, and the autoencoder demonstrates its effectiveness in deblurring the noise in the image
