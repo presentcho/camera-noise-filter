@@ -15,6 +15,6 @@ For the noise filtering model, autoencoders and variational autoencoders (VAEs) 
 ## Result
 | Test Image             | Autoencoder Image      |
 | ---------------------- | ---------------------- |
-| ![1](img/test.png) | ![2](img/autoencoder.png) |
+| <img src="img/test.png" width="400"> | <img src="img/autoencoder.png" width="400"> |
 
 The test image on the right-hand side features light strikes and noises, and the autoencoder demonstrates its effectiveness in deblurring the noise in the image
